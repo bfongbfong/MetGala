@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		559A995922F109D50028B980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A995822F109D50028B980 /* AppDelegate.swift */; };
-		559A995B22F109D50028B980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A995A22F109D50028B980 /* ViewController.swift */; };
 		559A995E22F109D50028B980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559A995C22F109D50028B980 /* Main.storyboard */; };
 		559A996022F109D70028B980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559A995F22F109D70028B980 /* Assets.xcassets */; };
 		559A996322F109D70028B980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559A996122F109D70028B980 /* LaunchScreen.storyboard */; };
+		559A996B22F109EA0028B980 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A996A22F109EA0028B980 /* Globals.swift */; };
+		559A996D22F109FC0028B980 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A996C22F109FC0028B980 /* HomeViewController.swift */; };
+		559A997122F10A1A0028B980 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A997022F10A1A0028B980 /* GalleryCollectionViewCell.swift */; };
+		559A997322F10A8A0028B980 /* PaintingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A997222F10A8A0028B980 /* PaintingDetailViewController.swift */; };
+		559A997522F10A9C0028B980 /* PaintingFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A997422F10A9C0028B980 /* PaintingFullScreenViewController.swift */; };
+		559A997922F10B710028B980 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A997822F10B710028B980 /* GalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		559A995522F109D50028B980 /* Met Gala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Met Gala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		559A995822F109D50028B980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		559A995A22F109D50028B980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		559A995D22F109D50028B980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		559A995F22F109D70028B980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		559A996222F109D70028B980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		559A996422F109D70028B980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559A996A22F109EA0028B980 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		559A996C22F109FC0028B980 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		559A997022F10A1A0028B980 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		559A997222F10A8A0028B980 /* PaintingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingDetailViewController.swift; sourceTree = "<group>"; };
+		559A997422F10A9C0028B980 /* PaintingFullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaintingFullScreenViewController.swift; path = ../PaintingFullScreenViewController.swift; sourceTree = "<group>"; };
+		559A997822F10B710028B980 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = ../../GalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		559A995722F109D50028B980 /* Met Gala */ = {
 			isa = PBXGroup;
 			children = (
-				559A995822F109D50028B980 /* AppDelegate.swift */,
-				559A995A22F109D50028B980 /* ViewController.swift */,
 				559A995C22F109D50028B980 /* Main.storyboard */,
+				559A995822F109D50028B980 /* AppDelegate.swift */,
+				559A996A22F109EA0028B980 /* Globals.swift */,
+				559A996C22F109FC0028B980 /* HomeViewController.swift */,
+				559A997622F10AA50028B980 /* Gallery */,
+				559A997722F10AB00028B980 /* Painting Details */,
 				559A995F22F109D70028B980 /* Assets.xcassets */,
 				559A996122F109D70028B980 /* LaunchScreen.storyboard */,
 				559A996422F109D70028B980 /* Info.plist */,
 			);
 			path = "Met Gala";
+			sourceTree = "<group>";
+		};
+		559A997622F10AA50028B980 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				559A997822F10B710028B980 /* GalleryViewController.swift */,
+				559A997022F10A1A0028B980 /* GalleryCollectionViewCell.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		559A997722F10AB00028B980 /* Painting Details */ = {
+			isa = PBXGroup;
+			children = (
+				559A997222F10A8A0028B980 /* PaintingDetailViewController.swift */,
+				559A997422F10A9C0028B980 /* PaintingFullScreenViewController.swift */,
+			);
+			path = "Painting Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				559A995B22F109D50028B980 /* ViewController.swift in Sources */,
+				559A996B22F109EA0028B980 /* Globals.swift in Sources */,
+				559A997922F10B710028B980 /* GalleryViewController.swift in Sources */,
+				559A997122F10A1A0028B980 /* GalleryCollectionViewCell.swift in Sources */,
 				559A995922F109D50028B980 /* AppDelegate.swift in Sources */,
+				559A997322F10A8A0028B980 /* PaintingDetailViewController.swift in Sources */,
+				559A996D22F109FC0028B980 /* HomeViewController.swift in Sources */,
+				559A997522F10A9C0028B980 /* PaintingFullScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
